@@ -6,3 +6,7 @@
 
 # Управление
 ![](./images/Movement.svg)
+
+# Качественные скриншоты
+![](./images/qualied_1tt4pidzKH.png)
+![](./images/qualied_6TiMNcSx9T.png)
