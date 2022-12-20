@@ -23,7 +23,7 @@ class Program
     public static WinState state = WinState.FullWindow;
     public static int ScreenIndex = 0;
 
-    static Font font = new Font("6622.ttf");
+    static Font font = new Font(MandelbrotSet.Properties.Resources._6622);
     static bool Stop = false;
     static Screen scr = Screen.AllScreens[ScreenIndex];
 
@@ -352,7 +352,10 @@ class Program
             if (j["ScreenIndex"] != null)
             {
                 ScreenIndex = (int)j["ScreenIndex"];
+                if (Screen.AllScreens.Length >= ScreenIndex)
+                    ScreenIndex = Screen.AllScreens.Length - 1;
                 scr = Screen.AllScreens[ScreenIndex];
+
             }
         }
     }
